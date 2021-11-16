@@ -1,16 +1,19 @@
 <!-- Describe task in general -->
 
-<p>
-    Sum two passed ints
-</p>
 
-<p style="text-align: center;">
-    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
-</p>
+<p>Every valid email consists of name and domain, separated by the '@' sign. Besides lowercase letters, the email may contain one or more '.' or '+'. For example, in "alex@checkio.org", "alex" is the name, and "checkio.org" is the domain.</p>
+
+<p>If you add periods '.' between some characters in the name part of an email address, mail sent there will be delivered to the same address without dots in the name. Note that this rule does not apply to domain names. For example, "a.lyabah@checkio.org" and "alyabah@checkio.org" delivered to the same email address.</p>
+
+<p>If you add a plus '+' in the  name, everything after the first plus sign will be ignored. This allows certain emails to be filtered. Note that this rule does not apply to domain names. For example, "alex+home@checkio.org" will be delivered to "alex@checkio.org".</p>
+
+<p>It is possible to use both of these rules at the same time.</p>
+
+<p>Given an array of strings - valid emails, return the number of unique emails.</p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input: </strong> Two arguments. Both are ints.
+    <strong>Input: </strong> Array of strings(valid emails)
 </p>
 
 <p>
@@ -26,17 +29,14 @@
 
 <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 
-<!-- Here you can explain how it can be used in development -->
-<!-- The section is optional -->
-<p class="for_info_only">
-
-    <strong>How it’s used: </strong>
-    <i>(math is used everywhere)</i>
+<p>
+    <strong>How it is used:</strong>
+    <i>for filtering our your maillist</i>
 </p>
 
 <!-- Here you can explain some constraints for input-->
 <!-- The section is optional -->
 <p>
     <strong>Precondition:</strong>
-    <i>both given ints should be between -1000 and 1000</i>
+    <i>all emails are valid</i>
 </p>

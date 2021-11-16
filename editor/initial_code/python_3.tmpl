@@ -2,19 +2,19 @@
 {% block env %}{% endblock env %}
 
 {% block start %}
-def sum_two(a: int, b: int) -> int:
+def unique_emails(emails:list) -> int:
     # your code here
-    return None
+    return 0
 {% endblock start %}
 
 {% block example %}
 print('Example:')
-print(mult_two(1, 2))
+print(unique_emails(["alex@checkio.org", "mike@google.com", "lili@apple.com"]))
 {% endblock %}
 
 {% block tests %}
 {% for t in tests %}
-assert {% block call %}mult_two({{t.input.0|p}}, {{t.input.1|p}})
+assert {% block call %}unique_emails({{t.input.0|p}})
 {% endblock %} == {% block result %}{{t.answer|p}}{% endblock %}{% endfor %}
 {% endblock %}
 

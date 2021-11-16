@@ -11,26 +11,59 @@ Each test is a dict with
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": [[
+                "alex@checkio.org",
+                "mike@google.com",
+                "lili@apple.com",
+            ]],
+            "answer": 3,
         },
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
-        }
+            "input": [[
+                "mi.ke@google.com",
+                "alex@checkio.org",
+                "mike@google.com",
+                "lili@apple.com",
+            ]],
+            "answer": 3,
+        },
+        {
+            "input": [[
+                "alex+home@checkio.org",
+                "lili+work@apple.com",
+                "alex@checkio.org",
+                "lili@apple.com",
+            ]],
+            "answer": 2,
+        },
+        {
+            "input": [[
+                "l.ili+work@apple.com",
+                "a.lex@checkio.org",
+                "alex+home@checkio.org",
+                "lili+work@apple.com",
+                "alex@checkio.org",
+                "lili@apple.com",
+            ]],
+            "answer": 2,
+        },
+        {
+            "input": [[
+                "Alex@checkIO.org",
+                "alex@checkio.org",
+                "alex@check.io.org",
+            ]],
+            "answer": 2,
+        },
+        {
+            "input": [[]],
+            "answer": 0,
+        },
     ],
     "Extra": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": [["name.last@domain.com", "namelast+last.name@domain.com", "namelast@domain.com"]],
+            "answer": 1,
         },
-        {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
-        }
     ]
 }
